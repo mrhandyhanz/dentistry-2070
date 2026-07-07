@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub | Dentistry 2070</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { navy: '#1e3a8a', 'teal-custom': '#3b82f6' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .era-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-4px);
+        }
+
+        .glass-panel {
+            background: rgba(10, 17, 32, 0.03);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <header class="bg-navy pt-32 pb-20 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+            <svg viewBox="0 0 100 100" class="h-full w-full stroke-current">
+                <circle cx="100" cy="0" r="80" fill="none" stroke-width="0.1" />
+                <circle cx="100" cy="0" r="60" fill="none" stroke-width="0.1" />
+                <circle cx="100" cy="0" r="40" fill="none" stroke-width="0.1" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <nav class="flex gap-4 text-[10px] font-bold uppercase tracking-[0.3em] text-teal-custom mb-8">
+                    <a href="#" class="hover:text-white transition">Archive</a>
+                    <span>/</span>
+                    <a href="#" class="text-white">Knowledge Hub</a>
+                </nav>
+                <h1 class="font-serif text-5xl md:text-6xl mb-6 leading-tight">Forecasting the <br><span
+                        class="italic text-teal-custom">Future of Oral Health</span></h1>
+                <p class="text-slate-400 text-lg font-light leading-relaxed mb-10">
+                    A centralized repository of institutional research, ethical frameworks, and technological
+                    forecasting models through the year 2070.
+                </p>
+
+                <div
+                    class="flex items-center bg-slate-900/50 border border-slate-800 rounded-sm p-2 max-w-2xl focus-within:border-teal-custom transition-all">
+                    <div class="px-4 text-slate-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Search by Era, Technology, or Author..."
+                        class="bg-transparent border-none text-white w-full py-3 focus:ring-0 text-sm">
+                    <button
+                        class="bg-teal-custom text-white px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-teal-600 transition">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-12">
+                <h2 class="font-serif text-2xl">Research Eras</h2>
+                <div class="h-px bg-slate-200 flex-grow mx-8 hidden md:block"></div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Chronological
+                    Classification</span>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <button
+                    class="era-card text-left border border-slate-100 p-6 transition-all duration-300 bg-slate-50/50 group">
+                    <span class="text-teal-custom font-bold text-xs mb-4 block">2026—2035</span>
+                    <h4 class="font-bold text-sm mb-2 group-hover:text-teal-custom">Foundations</h4>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">The shift from restorative to preventative
+                        dominance and AI diagnostics.</p>
+                </button>
+                <button
+                    class="era-card text-left border border-slate-100 p-6 transition-all duration-300 bg-slate-50/50 group">
+                    <span class="text-slate-400 font-bold text-xs mb-4 block">2035—2045</span>
+                    <h4 class="font-bold text-sm mb-2 group-hover:text-teal-custom">Transitional</h4>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Integration of bio-synthetic materials and
+                        decentralized care models.</p>
+                </button>
+                <button
+                    class="era-card text-left border border-slate-100 p-6 transition-all duration-300 bg-slate-50/50 group">
+                    <span class="text-slate-400 font-bold text-xs mb-4 block">2045—2055</span>
+                    <h4 class="font-bold text-sm mb-2 group-hover:text-teal-custom">Regenerative</h4>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Stem-cell tooth regeneration and peptide-based
+                        enamel recovery.</p>
+                </button>
+                <button
+                    class="era-card text-left border border-slate-100 p-6 transition-all duration-300 bg-slate-50/50 group">
+                    <span class="text-slate-400 font-bold text-xs mb-4 block">2055—2070</span>
+                    <h4 class="font-bold text-sm mb-2 group-hover:text-teal-custom">Post-Clinic</h4>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Autonomous care and the end of institutional
+                        dental surgery as we know it.</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12">
+
+        <aside class="col-span-1">
+            <div class="sticky top-28 space-y-10">
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest mb-6 text-navy">Resource Type</h5>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-sm text-slate-600">
+                            <input type="checkbox"
+                                class="rounded border-slate-300 text-teal-custom focus:ring-teal-custom">
+                            White Papers (12)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600">
+                            <input type="checkbox"
+                                class="rounded border-slate-300 text-teal-custom focus:ring-teal-custom">
+                            Research Briefs (24)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600">
+                            <input type="checkbox"
+                                class="rounded border-slate-300 text-teal-custom focus:ring-teal-custom">
+                            Forecasting Models (8)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600">
+                            <input type="checkbox"
+                                class="rounded border-slate-300 text-teal-custom focus:ring-teal-custom">
+                            Case Studies (15)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-navy p-6 rounded-sm text-white">
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest mb-4">Newsletter</h5>
+                    <p class="text-[11px] text-slate-400 mb-6">Receive monthly research digests and institutional
+                        updates.</p>
+                    <input type="email" placeholder="email@institution.org"
+                        class="w-full bg-slate-800 border-none p-3 text-xs mb-3 focus:ring-1 focus:ring-teal-custom">
+                    <button
+                        class="w-full bg-teal-custom py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-teal-600 transition">Subscribe</button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="lg:col-span-3 space-y-8">
+            <article
+                class="bg-white border border-slate-200 p-8 flex flex-col md:flex-row gap-8 hover:shadow-xl hover:shadow-slate-200/50 transition-all group">
+                <div class="w-full md:w-48 h-48 bg-slate-100 flex-shrink-0 relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center font-serif text-4xl text-slate-200 select-none italic">
+                        D2070</div>
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&q=80"
+                        alt="Research"
+                        class="absolute inset-0 object-cover opacity-80 mix-blend-multiply group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span
+                            class="bg-teal-50 text-teal-700 text-[9px] font-bold px-2 py-1 uppercase tracking-wider">Regenerative</span>
+                        <span class="text-[9px] text-slate-400 font-bold uppercase tracking-widest">White Paper
+                            #2044-A</span>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 group-hover:text-teal-custom transition-colors">The
+                        Bio-Synthetic Revolution: Enamel Replacement Protocols</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">A deep dive into the 2045-2055 transition
+                        from porcelain-based restorations to peptide-driven biological enamel recovery.</p>
+                    <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                        <div class="flex gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                            <span>Author: Dr. Elena Vance</span>
+                            <span>18 Min Read</span>
+                        </div>
+                        <a href="#"
+                            class="text-navy font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">Download
+                            Archive <span>→</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article
+                class="bg-white border border-slate-200 p-8 flex flex-col md:flex-row gap-8 hover:shadow-xl hover:shadow-slate-200/50 transition-all group">
+                <div class="w-full md:w-48 h-48 bg-slate-100 flex-shrink-0 relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center font-serif text-4xl text-slate-200 select-none italic">
+                        D2070</div>
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80"
+                        alt="Research"
+                        class="absolute inset-0 object-cover opacity-80 mix-blend-multiply group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span
+                            class="bg-slate-100 text-slate-600 text-[9px] font-bold px-2 py-1 uppercase tracking-wider">Foundations</span>
+                        <span class="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Article
+                            #2026-F</span>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 group-hover:text-teal-custom transition-colors">AI Diagnostics:
+                        The End of Exploratory Surgery?</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">How high-fidelity machine learning is
+                        rendering the physical dental probe obsolete within the next decade of clinical practice.</p>
+                    <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                        <div class="flex gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                            <span>Author: Marcus Thorne</span>
+                            <span>12 Min Read</span>
+                        </div>
+                        <a href="#"
+                            class="text-navy font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">Full
+                            Article <span>→</span></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <div class="max-w-7xl mx-auto px-6 pb-24 flex justify-center">
+        <div class="flex gap-2">
+            <button
+                class="w-10 h-10 flex items-center justify-center border border-navy bg-navy text-white text-xs">1</button>
+            <button
+                class="w-10 h-10 flex items-center justify-center border border-slate-200 hover:border-navy text-xs transition">2</button>
+            <button
+                class="w-10 h-10 flex items-center justify-center border border-slate-200 hover:border-navy text-xs transition">3</button>
+            <span class="w-10 h-10 flex items-center justify-center text-slate-400">...</span>
+            <button
+                class="w-10 h-10 flex items-center justify-center border border-slate-200 hover:border-navy text-xs transition">12</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
